@@ -56,7 +56,7 @@ export const Home = () => {
             <div className="allRecipes">
             {
                 state.filteredData.map(item => (
-                    <RecipeCard key={item.id} id={item.id} name={item.name} imageSrc=  "https://media.fuzia.com/assets/uploads/images/co_brand_1/article/2018/img-9706-1531814575.jpeg" cuisineType={item.cuisineType}/>
+                    <RecipeCard key={item.id} id={item.id} name={item.name} image={item.image} cuisineType={item.cuisineType}/>
                 ))
             }
             <button className="add-button" onClick={onAddClick}>

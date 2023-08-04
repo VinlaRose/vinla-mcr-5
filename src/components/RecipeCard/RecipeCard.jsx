@@ -3,7 +3,7 @@ import "./RecipeCard.css"
 import { DataContext } from '../../context/context';
 import { useNavigate } from 'react-router-dom';
 
-const RecipeCard = ({ id, name, imageSrc, cuisineType, onDelete, onEdit }) => {
+const RecipeCard = ({ id, name, image , cuisineType, onDelete, onEdit }) => {
   const {state, dispatch} = useContext(DataContext);
   const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ const RecipeCard = ({ id, name, imageSrc, cuisineType, onDelete, onEdit }) => {
   return (
     <div className="recipe-card">
       <div className="recipe-image-container">
-        <img src={imageSrc} alt={name} className="recipe-image" />
+        <img src={image || "https://2blissofbaking.com/wp-content/uploads/2020/09/dsc_2502-edit-1_ftrx8d9i3t7aw2-768x1154.jpeg"} alt={name} className="recipe-image" />
         <div className="icon-container" onClick={() => deleteItem(id)}>
         <span class="material-symbols-outlined">
 delete

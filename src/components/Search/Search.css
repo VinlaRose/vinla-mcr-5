@@ -1,14 +1,21 @@
 .search-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin: 16px 0;
+    margin: 16px 0 ;
+     border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-left: 20px;
+    
   }
   
   .radio-buttons {
     display: flex;
     gap: 16px;
-    margin-bottom: 16px;
+    margin-left: 20px;
+  }
+  .radio{
+    display: flex;
   }
   
   input[type='radio'] {
@@ -18,13 +25,17 @@
   .search-input {
     display: flex;
     align-items: center;
+    border-right: 1px solid grey;
+   
   }
   
   input[type='text'] {
     padding: 8px;
-    border: 1px solid #ccc;
+    
     border-radius: 4px;
     margin-right: 8px;
+     border: none;
+  margin-bottom: 0px;
   }
   
   .search-button {
@@ -38,5 +49,8 @@
   
   .search-button:hover {
     background-color: #2980b9;
+  }
+  label{
+    margin-bottom: 0px;
   }
   
