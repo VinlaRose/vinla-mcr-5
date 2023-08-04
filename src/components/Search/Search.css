@@ -20,6 +20,7 @@
   
   input[type='radio'] {
     margin-right: 8px;
+    outline: none;
   }
   
   .search-input {
@@ -29,7 +30,7 @@
    
   }
   
-  input[type='text'] {
+  .search-input input[type='text'] {
     padding: 8px;
     
     border-radius: 4px;
