@@ -1,0 +1,43 @@
+.recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    max-width: 200px;
+    margin: 16px;
+  }
+  
+  .recipe-image-container {
+    position: relative;
+  }
+  
+  .recipe-image {
+    width: 100%;
+    
+  }
+  
+  .icon-container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    gap: 8px;
+    color: black;
+    background-color: white;
+  }
+  
+  .icon {
+    width: 20px;
+    cursor: pointer;
+  }
+  
+  .recipe-name {
+    margin-top: 8px;
+  }
+  
+  .cuisine-type {
+    font-style: italic;
+    color: #666;
+  }
+
+ 
